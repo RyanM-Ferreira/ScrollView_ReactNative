@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Expo Web",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npx",
+            "runtimeArgs": [
+                "expo",
+                "start",
+                "--web"
+            ],
+            "console": "externalTerminal",
+        }
+    ]
+}

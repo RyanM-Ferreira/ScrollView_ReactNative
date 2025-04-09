@@ -7,8 +7,7 @@ class App extends Component {
       <View style={styles.container}>
         <Text style={styles.cainCompanyName}>Ryan Ferreira - 3° DS AMS</Text>
 
-        { /* Tentativa de refatoração para reduzir repetiç~oes */}
-
+        { /* Tentativa de refatoração para reduzir repetições */}
         {/* Scroll horizontal com logos */}
         <ScrollView horizontal={true} style={styles.horizontalScroll} showsHorizontalScrollIndicator={false}>
           {[
@@ -20,7 +19,7 @@ class App extends Component {
             { imgPath: require('./assets/images/sony.jpg'), descriptions: 'Sony' },
             { imgPath: require('./assets/images/amd.jpg'), descriptions: 'AMD' },
             { imgPath: require('./assets/images/samsung.jpg'), descriptions: 'Samsung' },
-          ].map((item) => (
+          ].map(item => (
             <View style={styles.logoBox}>
               <Image source={item.imgPath} style={styles.image} />
               <Text style={styles.text}>{item.descriptions}</Text>
@@ -71,7 +70,7 @@ class App extends Component {
               companyName: 'Samsung',
               descriptions: 'Conglomerado sul-coreano com liderança em smartphones, TVs e semicondutores. Também atua com IA, displays e tecnologia de ponta.',
             },
-          ].map((item) => (
+          ].map(item => (
             <View style={styles.box}>
               <Image source={item.imgPath} style={styles.image2} />
               <View style={styles.descriptionsriptionText}>

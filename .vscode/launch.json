@@ -12,6 +12,13 @@
                 "--web"
             ],
             "console": "externalTerminal",
+        },
+        {
+            "name": "Deploy on Vercel",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "vercel",
+            "console": "externalTerminal",
         }
     ]
 }

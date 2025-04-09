@@ -5,6 +5,9 @@ class App extends Component {
   render() {
     return (
       <View style={styles.container}>
+
+        <Text style={styles.mainTitle}>Ryan Ferreira - 3° DS AMS</Text>
+
         {/* Scroll horizontal com logos */}
         <ScrollView horizontal={true} style={styles.horizontalScroll}>
           <View style={styles.logoBox}>
@@ -105,6 +108,8 @@ const styles = StyleSheet.create({
   horizontalScroll: {
     padding: 10,
     height: 250,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   logoBox: {
     alignItems: 'center',
@@ -113,6 +118,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     padding: 10,
     height: 'fit-content',
+    width: 200,
   },
   image: {
     width: 128,
@@ -136,6 +142,13 @@ const styles = StyleSheet.create({
     padding: 12,
     borderRadius: 8,
     marginBottom: 16,
+  },
+  mainTitle: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    color: 'white',
+    marginBottom: 16,
+    textAlign: 'center',
   },
   title: {
     fontWeight: 'bold',
